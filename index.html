@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CSS -->
+    <link href="stylesheet.css" rel="stylesheet">
+		<script src="jquery.min.js"></script>
+	<title>Jquery Stuff</title>
+</head>
+<body>
+<div id = "cloud"><span class='shadow'></span></div>
+
+</body>
+<script>
+$(document).ready(function() {
+    $('#cloud').animate({ "left": "+=200px" }, "slow", function() {alert('all done');});
+});
+</script>
+</html>
+
