@@ -7,16 +7,30 @@
 	<title>Jquery Stuff</title>
 </head>
 <body>
-<div id = "cloud"><span class='shadow'></span></div>
-
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-12">
+			<div id = "cloud"><span class='shadow'></span></div>
+		</div>
+		<div class = "col-md-12">
+			<div id = "cloud1"><span class='shadow1'></span></div>
+		</div>
+		<div class = "col-md-12">
+			<div id = "cloud2"><span class='shadow2'></span></div>
+		</div>
+	</div>
+</div>
 </body>
 <script>
 
 $(document).ready(function() {
-  $('#cloud').animate({ "left": "+=200px" }, "slow", function() {$('#cloud').animate({ "left": "+=600px" }, "slow")});
-// for (var i = 0; i < 100; ++i) {
-// 	return move[i]
-// }
+  
+
+  $('#cloud').animate({ "left": "+=200px" }, "slow", function() {$('#cloud').animate({ "left": "+=50px" }, "slow")});
+
+ $('#cloud1').animate({ "left": "+=200px" }, "slow", function() {$('#cloud1').animate({ "left": "+=50px" }, "slow")});
+
+ $('#cloud2').animate({ "left": "+=200px" }, "slow", function() {$('#cloud2').animate({ "left": "+=50px" }, "slow")});
 
 
 });
